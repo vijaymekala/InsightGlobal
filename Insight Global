@@ -1,0 +1,38 @@
+Make this work:
+duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+
+function duplicate (arr) {
+	const temp = arr;
+    return [...temp, ...arr]
+}
+
+
+
+
+Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5
+
+for (var i = 1; i <= 100; i++) {
+  var message = '';
+  if (i%3 === 0) message = 'fizz';
+  if (i%5 === 0) message = 'buzz';
+  if (i%3 === 0 && i%5 === 0) message = 'fizzbuzz';
+  console.log(message || i);
+}
+
+
+
+
+
+What will be returned by each of these?
+console.log("hello" || "world")  => hello
+console.log("foo" && "bar")   => bar
+
+
+
+
+
+
+
+
+Write an immediately invoked function expression (IIFE)
+(function() { console.log("Thank you for the opportunity with Goldman Sachs"); })();
